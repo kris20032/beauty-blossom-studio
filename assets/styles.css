@@ -5,18 +5,19 @@
    ============================================================ */
 
 :root{
-  /* PALETA — jasna, architektoniczna, chłodna */
-  --paper:#FBF7F4;          /* główne tło */
-  --paper-2:#F1E7E4;        /* sekcje alternatywne (chłodny jasny szary) */
-  --paper-3:#F1E7E4;        /* delikatne wypełnienia */
-  --ink:#2A2126;            /* tekst główny — chłodny grafit */
-  --ink-soft:#574550;       /* nagłówki drugorzędne */
+  /* PALETA — jasna, pastelowa, ciepła (pod markę: złoty kwiat + miękka szarość) */
+  --paper:#FDFBF8;          /* główne tło — kremowa biel */
+  --paper-2:#F6EDE8;        /* sekcje alternatywne — miękki pudrowy róż */
+  --paper-3:#FBF3EE;        /* delikatne wypełnienia — jasny brzoskwiniowy */
+  --ink:#33272D;            /* tekst główny — ciepły grafit */
+  --ink-soft:#5E4A54;       /* nagłówki drugorzędne */
   --muted:#94888C;          /* tekst poboczny */
-  --line:rgba(42,33,38,.12);/* hairline */
-  --accent:#A85A6B;         /* stonowany petrol-slate — jedyny akcent */
+  --line:rgba(51,39,45,.10);/* hairline */
+  --accent:#A85A6B;         /* stonowany pudrowy róż — główny akcent (czytelny) */
   --accent-d:#8A4456;
   --accent-soft:rgba(168,90,107,.10);
-  --dark:#2A2126;           /* sekcje ciemne (stopka/CTA) */
+  --gold:#C9A24B;           /* ciepłe złoto z logo — subtelny akcent dekoracyjny */
+  --dark:#3A2C32;           /* sekcje ciemne (stopka/CTA) — ciepły śliwkowy, nie zimny grafit */
 
   /* ODSTĘPY — skala 4/8 */
   --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
@@ -79,7 +80,7 @@ p{max-width:65ch}
   color:var(--accent);
   display:inline-flex;align-items:center;gap:var(--space-3);
 }
-.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent);display:inline-block}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold);display:inline-block}
 
 .muted{color:var(--muted)}
 .lead{font-size:var(--text-lg);line-height:1.55;color:var(--ink-soft);max-width:50ch}
