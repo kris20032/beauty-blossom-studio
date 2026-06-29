@@ -511,12 +511,16 @@ section{padding-block:clamp(74px,10vh,124px)}   /* nieco więcej oddechu niż re
 
 /* === CENNIK WELLNESS: editorialowa LISTA zabiegów (wiersze hairline), NIE siatka gastro === */
 .cennik{max-width:60rem;margin:var(--space-8) auto 0;display:flex;flex-direction:column}
-.cennik-row{display:grid;grid-template-columns:minmax(12rem,1fr) 1.6fr;gap:clamp(1rem,3vw,3rem);
+.cennik-row{display:grid;grid-template-columns:1fr auto;gap:clamp(1.2rem,4vw,3.5rem);
   padding-block:var(--space-5);border-top:1px solid var(--line);align-items:baseline}
 .cennik-row:last-child{border-bottom:1px solid var(--line)}
 .cn-name h3{font-family:var(--font-display);font-weight:500;font-size:1.3rem;letter-spacing:-.005em;line-height:1.2}
-.cn-desc{color:var(--ink-soft);font-size:var(--text-base);line-height:1.6}
-@media(max-width:680px){.cennik-row{grid-template-columns:1fr;gap:var(--space-2)}}
+.cn-desc{color:var(--ink-soft);font-size:var(--text-base);line-height:1.6;margin-top:.45rem;max-width:52ch}
+.cn-price{font-family:var(--font-display);font-weight:600;font-size:clamp(1.45rem,2.6vw,1.8rem);color:var(--accent);
+  line-height:1.05;text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;gap:.25rem}
+.cn-meta{font-family:var(--font-body);font-weight:400;font-size:var(--text-sm);color:var(--muted)}
+@media(max-width:680px){.cennik-row{grid-template-columns:1fr auto;gap:var(--space-3) var(--space-4)}
+  .cn-price{font-size:1.35rem}}
 
 /* === PAGEHEAD JASNY (wellness): cream + ink + zdjęcie oprawione (reset ciemnego base .pagehead) === */
 .pagehead-soft{min-height:0;overflow:visible;background:var(--paper);border-bottom:1px solid var(--line);
